@@ -16,14 +16,12 @@ let calculateTax = () => {
                             sumEst = 0;
                         } break;
                         case Number(zvE.value) > 9744 && Number(zvE.value) <= 14753: {
-                            y = ((Number(zvE.value) / 2) - 9744) / 10000;
+                            let y = ((Number(zvE.value) / 2) - 9744) / 10000;
                             sumEst = (995.21 * y + 1400) * y;
                         } break;
                         case Number(zvE.value) > 14753 && Number(zvE.value) <= 57918: {
-                            z = ((Number(zvE.value) / 2) - 14573) / 10000;
+                            let z = ((Number(zvE.value) / 2) - 14573) / 10000;
                             sumEst = (((208.85 * z) + 2397) * z) + 950.96;
-                            console.log(z);
-                            console.log(sumEst);
                         } break;
                         case Number(zvE.value) > 57918 && Number(zvE.value) <= 274612: {
                             sumEst = 0.42 * ((Number(zvE.value)) / 2) - 9136.63;
@@ -42,11 +40,11 @@ let calculateTax = () => {
                                     sumEst = 0;
                                 } break;
                                 case Number(zvE.value) > 9408 && Number(zvE.value) <= 14532: {
-                                    y = ((Number(zvE.value) - 9408) / 2) / 10000;
+                                    let y = ((Number(zvE.value) - 9408) / 2) / 10000;
                                     sumEst = (972.87 * y + 1400) * y;
                                 } break;
                                 case Number(zvE.value) > 14532 && Number(zvE.value) <= 57051: {
-                                    z = ((Number(zvE.value) - 14532) / 2) / 10000;
+                                    let z = ((Number(zvE.value) - 14532) / 2) / 10000;
                                     sumEst = (212.02 * z + 2397) * z + 972.79;
                                 } break;
                                 case Number(zvE.value) > 57051 && Number(zvE.value) <= 270500: {
@@ -66,11 +64,11 @@ let calculateTax = () => {
                                             sumEst = 0;
                                         } break;
                                         case Number(zvE.value) > 9168 && Number(zvE.value) <= 14254: {
-                                            y = ((Number(zvE.value) / 2) - 9168) / 10000;
+                                            let y = ((Number(zvE.value) / 2) - 9168) / 10000;
                                             sumEst = (980.14 * y + 1400) * y;
                                         } break;
                                         case Number(zvE.value) > 14754 && Number(zvE.value) <= 55960: {
-                                            z = ((Number(zvE.value) - 14254) / 2) / 10000;
+                                            let z = ((Number(zvE.value) - 14254) / 2) / 10000;
                                             sumEst = (216.16 * z + 2397) * z + 965.58;
                                         } break;
                                         case Number(zvE.value) > 55960 && Number(zvE.value) <= 265326: {
@@ -96,11 +94,11 @@ let calculateTax = () => {
                             sumEst = 0;
                         } break;
                         case Number(zvE.value) > 9744 && Number(zvE.value) <= 14753: {
-                            y = (Number(zvE.value) - 9744) / 10000;
+                            let y = (Number(zvE.value) - 9744) / 10000;
                             sumEst = (995.21 * y + 1400) * y;
                         } break;
                         case Number(zvE.value) > 14753 && Number(zvE.value) <= 57918: {
-                            z = (Number(zvE.value) - 14573) / 10000;
+                            let z = (Number(zvE.value) - 14573) / 10000;
                             sumEst = (208.85 * z + 2397) * z + 950.96;
                         } break;
                         case Number(zvE.value) > 57918 && Number(zvE.value) <= 274612: {
@@ -120,11 +118,11 @@ let calculateTax = () => {
                                     sumEst = 0;
                                 } break;
                                 case Number(zvE.value) > 9408 && Number(zvE.value) <= 14532: {
-                                    y = (Number(zvE.value) - 9408) / 10000;
+                                    let y = (Number(zvE.value) - 9408) / 10000;
                                     sumEst = (972.87 * y + 1400) * y;
                                 } break;
                                 case Number(zvE.value) > 14532 && Number(zvE.value) <= 57051: {
-                                    z = (Number(zvE.value) - 14532) / 10000;
+                                    let z = (Number(zvE.value) - 14532) / 10000;
                                     sumEst = (212.02 * z + 2397) * z + 972.79;
                                 } break;
                                 case Number(zvE.value) > 57051 && Number(zvE.value) <= 270500: {
@@ -144,11 +142,11 @@ let calculateTax = () => {
                                             sumEst = 0;
                                         } break;
                                         case Number(zvE.value) > 9168 && Number(zvE.value) <= 14254: {
-                                            y = (Number(zvE.value) - 9168) / 10000;
+                                            let y = (Number(zvE.value) - 9168) / 10000;
                                             sumEst = (980.14 * y + 1400) * y;
                                         } break;
                                         case Number(zvE.value) > 14754 && Number(zvE.value) <= 55960: {
-                                            z = (Number(zvE.value) - 14254) / 10000;
+                                            let z = (Number(zvE.value) - 14254) / 10000;
                                             sumEst = (216.16 * z + 2397) * z + 965.58;
                                         } break;
                                         case Number(zvE.value) > 55960 && Number(zvE.value) <= 265326: {
